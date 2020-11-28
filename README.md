@@ -1,52 +1,45 @@
-
 # Python is easy
- Curso introdutorio de python, oferecido pela `Open Source IT`.
+ Introductory python course, offered by `Open Source IT`.
 
-## Pre requisitos
+## Pre requirements
 
--   Python
--   Interpretador Python
-    -   PyCharm
-    -   Anaconda
-    -   Jupyter
+- Python (https://www.python.org/downloads/)
+- Python interpreter
+    - PyCharm (https://www.jetbrains.com/pycharm/download/)
+    - Anaconda (https://www.anaconda.com/)
+    - Jupyter (https://jupyter.org/install)
 
-Existem outras alternativas voce pode usar o `VS Code`, `Sublime Text` porem devera instalar a extensao ou o pacote para programar em `Python`.
-Lista de algumas extensaos e pacotes:
--   VS Code
-    -
-    -
-    -
+There are other alternatives you can use `VS Code`,` Sublime Text` but you must install the extension or the package to program in `Python`.
+List of some extensions and packages:
+- VS Code (https://code.visualstudio.com/download)
+    - Python by Microsoft
+    - Anaconda Extension Pack by Microsoft
 
--   Sublime Text
-    -
-    -
-    -
+- Sublime Text (https://www.sublimetext.com/3)
+    - Python 3
+
+## Installation
+
+The installation of python is done according to the operating system.
+First, you must download `python` from the official website, and your IDE` PyCharm` or another chosen one.
+
+See how to install at:
+    https://www.python.org/about/gettingstarted/
+    https://www.jetbrains.com/pycharm/
+
+## First program
+
+The following example shows how to create your first `python` program using` PyCharm`.
+<img src="hello.gif" />
 
 
-## Instalacao
-
-A instalacao do python é feita de acordo com o sistema operativo.
-Primeiramente voce devera baixar o `python` no site oficial, o o seu interpretador seja o `PyCharm` ou outro escolhido.
-
-Os exemplos de instalacao foram feitos em windows, porem sera similar as outras plataformas.
-
-### Windows
-
-Colocar gif
-
-## Primeiro programa 
-
-O exemplo a seguir mostra como criar o seu primeiro programa `python` usando `PyCharm`.
-
-colocar gif
-
-## Manuais recomendados
+## Recommended manuals
 
  Python All-in-One For Dummies
  Python Programming for the Absolute Beginner
- Python Programming.  Python Programming for Beginners, Python Programming for Intermediates
+ Python Programming. Python Programming for Beginners, Python Programming for Intermediates
 
 
-## Como contribuir
+## How to contribute
 
-    Primeiro voce deve ter todos os pre requisitos instalados na sua maquina, recomendo você baixar e nstalar o [Git](https://git-scm.com/downloads) de seguida é so clonar o repositorio e enviar as suas contribuicoes na resolucao dos exercicios.
+    First you must have all the prerequisites installed on your machine, I recommend you to download and install [Git] (https://git-scm.com/downloads) then just clone the repository and send your contributions to solve the problems. Exercises.
