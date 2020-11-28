@@ -24,8 +24,8 @@ The installation of python is done according to the operating system.
 First, you must download `python` from the official website, and your IDE` PyCharm` or another chosen one.
 
 See how to install at:
-    https://www.python.org/about/gettingstarted/
-    https://www.jetbrains.com/pycharm/
+-   https://www.python.org/about/gettingstarted/
+-   https://www.jetbrains.com/pycharm/
 
 ## First program
 
