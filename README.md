@@ -35,11 +35,11 @@ The following example shows how to create your first `python` program using` PyC
 
 ## Recommended manuals
 
- Python All-in-One For Dummies
- Python Programming for the Absolute Beginner
- Python Programming. Python Programming for Beginners, Python Programming for Intermediates
+-   Python All-in-One For Dummies
+-   Python Programming for the Absolute Beginner
+-   Python Programming. Python Programming for Beginners, Python Programming for Intermediates
 
 
 ## How to contribute
 
-    First you must have all the prerequisites installed on your machine, I recommend you to download and install [Git] (https://git-scm.com/downloads) then just clone the repository and send your contributions to solve the problems. Exercises.
+First you must have all the prerequisites installed on your machine, I recommend you to download and install [Git] (https://git-scm.com/downloads) then just clone the repository and send your contributions to solve the problems. Exercises.
