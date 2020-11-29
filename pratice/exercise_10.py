@@ -1,13 +1,14 @@
 # Python Program to find Area of a Rectangle
 
 width = float(input('Please Enter the Width of a Rectangle: '))
-height = float(input('Please Enter the Height of a Rectangle: '))
-
 if width < 0 :
     print("\033[31mPlease enter a positive number for width.\033[m")
-elif height < 0:
+
+height = float(input('Please Enter the Height of a Rectangle: '))
+if height < 0:
     print("\033[31mPlease enter a positive number for height.\033[m")
-else:
+
+if height >= 0 and width >= 0:
     # calculate the area
     Area = width * height
     # calculate the Perimeter
