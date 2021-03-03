@@ -56,7 +56,7 @@ Inserting or creating a new record within the table.
 import sqlite3
 
 databaseFile = 'students.db'
-databaseName = 'STUDENTS'
+databaseTableName = 'STUDENTS'
 query = ''
 
 # connect to sqlite database
@@ -72,7 +72,7 @@ cursor.execute(query)
 # create table
 query = f'''
         CREATE TABLE STUDENTS(
-            id INT PRIMARY KEYNOT NULL,
+            id INT PRIMARY KEY NOT NULL,
             name CHAR(20) NOT NULL,
             roll CHAR(20),
             address CHAR(50),
@@ -91,23 +91,22 @@ connectation.close()
 import sqlite3
 
 databaseFile = 'students.db'
-databaseName = 'STUDENTS'
+databaseTableName = 'STUDENTS'
 query = ''
 
-connectation = connect.sqlite3('students.db')
+connectation = sqlite3.connect(databaseFile)
 cursor = connectation.cursor()
 
-cursor.execute(f"INSERT INTO {databaseName} (id, name, roll, address, class) VALUES(1, 'Mario', '001, 'pizzam' '10th')")
+query = f"INSERT INTO {databaseTableName} (id, name, roll, address, class) VALUES(1, 'Mario', '001', 'Ang', '10th')"
+cursor.execute(query)
 
-cursor.commit()
-cursor.close()
+connectation.commit()
+connectation.close()
 
-#OR
+# OR
 
-cursor = connectation.cursor()
+query = (f"INSERT INTO {databaseTableName} (id, name, roll, address, class) VALUES(:id, :name, :roll, :address, :class);")
 
-query = (f"INSERT INTO {databaseName} (id, name, roll, address, class)'
-          'VALUES(:id, :name, :roll, :address, :class);")
 params = {
     'id':2,
     'name':'Manuel',
@@ -117,7 +116,71 @@ params = {
 }
 
 cursor.execute(query, params)
-cursor.commit()
-cursor.close()
+connectation.commit()
+connectation.close()
+```
+### Read
+
+```py
+import sqlite3
+
+databaseFile = 'students.db'
+databaseTableName = 'STUDENTS'
+query = ''
+
+connectation = sqlite3.connect(databaseFile)
+
+query = f'SELECT * FROM {databaseTableName}'
+cursor = connectation.execute(query)
+students = cursor.fetchall()
+
+for student in students:
+    print(student)
+
+connectation.close()
 ```
 
+### Update
+
+```py
+import sqlite3
+
+databaseFile = 'students.db'
+databaseTableName = 'STUDENTS'
+query = ''
+
+connectation = sqlite3.connect(databaseFile)
+
+query = f'UPDATE {databaseTableName} SET roll = 005 WHERE id = 2'
+connectation.execute(query)
+connectation.commit()
+
+query = f'SELECT * FROM {databaseTableName}'
+cursor = connectation.execute(query)
+students = cursor.fetchall()
+print(students)
+
+connectation.close()
+```
+### Delete
+
+```py
+import sqlite3
+
+databaseFile = 'students.db'
+databaseTableName = 'STUDENTS'
+query = ''
+
+connectation = sqlite3.connect(databaseFile)
+
+query = f'DELETE FROM {databaseTableName} WHERE id = 1'
+connectation.execute(query)
+connectation.commit()
+
+query = f'SELECT * FROM {databaseTableName}'
+cursor = connectation.execute(query)
+students = cursor.fetchall()
+print(students)
+
+connectation.close()
+```
