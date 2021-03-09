@@ -1,7 +1,5 @@
 import sqlite3
 import csv, os
-from pathlib import Path
-
 
 # database manipulation
 DATABASE = 'school.db'
