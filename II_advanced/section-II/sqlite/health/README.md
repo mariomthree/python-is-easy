@@ -37,8 +37,8 @@ Create two documents with `hospital.csv` and` doctor.csv` records and insert the
 | doctor_name | hospital_id | date_joined | speciality | salary | experience |
 | ----------- | ----------- | ----------- | ---------- | ------ | ---------- |
 | Mario|2|2000-01-21|AC|2000|BBB|
-| Jonh|6|2002-01-21|AO|3000|DDD |
-| Ana|4|1990-01-21|AL|1200|BBB |
+| Jonh|1|2002-01-21|AO|3000|DDD |
+| Ana|3|1990-01-21|AL|1200|BBB |
 
 <br>
 <br>
@@ -77,7 +77,7 @@ Description of the methods of the `Main.py` file
 
 <br>
 
-## Como executar o projecto pela primeira vez
+## How to run the project for the first time
 First, it is necessary to have the files `hospital.csv` and` doctor.csv`, and finally follow the code below.
 
 ```py
