@@ -21,7 +21,7 @@ Using SQLite and python create two `hospital` and` doctor` tables with the follo
 Create two documents with `hospital.csv` and` doctor.csv` records and insert them in the database.
 
 ## Estrutura dos documentos csv
-### `hospital.csv`
+### hospital.csv
 
 |  hospital_name| bed_count |
 | ------------- | ------------- |
@@ -32,7 +32,7 @@ Create two documents with `hospital.csv` and` doctor.csv` records and insert the
 
 <br>
 
-### `doctor.csv`
+### doctor.csv
 
 | doctor_name | hospital_id | date_joined | speciality | salary | experience |
 | ----------- | ----------- | ----------- | ---------- | ------ | ---------- |
@@ -56,23 +56,23 @@ There are other alternatives you can use `VS Code`,` Sublime Text` but you must 
 ## Description of the methods
 Description of the methods of the `Main.py` file
 
-### `getInstance()` 
+### getInstance() 
 - Creates a new connection in the database
-### `createTable()` 
+### createTable() 
 - Creates the hospital and doctor tables
-### `insertHospitals()` 
+### insertHospitals() 
 - Insert records in the hospital table
-### `insertDoctors()` 
+### insertDoctors() 
 - Insert records in the doctor table
-### `getDataOfHospital()` 
+### getDataOfHospital() 
 - returns records from the hospital table
-### `getDataOfDoctors()` 
+### getDataOfDoctors() 
 - returns records from the doctor table
-### `showRecords()` 
+### showRecords() 
 - shows registers using the for cycle
-### `getCurrentDirname()` 
+### getCurrentDirname() 
 - returns the user's current directory
-### `readCSVFile()` 
+### readCSVFile() 
 - reads a csv file
 
 <br>
