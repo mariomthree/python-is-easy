@@ -20,7 +20,7 @@ Using SQLite and python create two `hospital` and` doctor` tables with the follo
 
 Create two documents with `hospital.csv` and` doctor.csv` records and insert them in the database.
 
-## Estrutura dos documentos csv
+## Structure of CSV documents
 ### hospital.csv
 
 |  hospital_name| bed_count |
