@@ -80,9 +80,77 @@ connection = mysql.connector.connect(
 
 cursor = connection.cursor()
 
-query = "INSERT INTO customers (name, address) VALUES (%s, %s)"
+query = "INSERT INTO students (name, address) VALUES (%s, %s)"
 values = ("Mario", "Maputo, Costal do Sol")
 cursor.execute(query, values)
 
 connection.commit()
 ```
+
+## Select From a Table
+
+To select from a table in MySQL, use the "SELECT" statement.
+```py
+import mysql.connector
+
+connection = mysql.connector.connect(
+    host="localhost",
+    user="yourusername",
+    password="yourpassword",
+    database="college"
+)
+
+cursor = connection.cursor()
+cursor.execute("SELECT * FROM students")
+
+students = mycursor.fetchall()
+for student in students:
+  print(student)
+```
+## Delete Record
+You can delete records from an existing table by using the "DELETE FROM" statement.
+
+```py
+import mysql.connector
+
+connection = mysql.connector.connect(
+    host="localhost",
+    user="yourusername",
+    password="yourpassword",
+    database="college"
+)
+
+cursor = connection.cursor()
+
+query = "DELETE FROM customers WHERE id = %s"
+values = (1, )
+cursor.execute(query, values)
+connection.commit()
+```
+
+## Update Table
+You can update existing records in a table by using the "UPDATE" statement.
+
+```py
+import mysql.connector
+
+connection = mysql.connector.connect(
+    host="localhost",
+    user="yourusername",
+    password="yourpassword",
+    database="college"
+)
+
+cursor = connection.cursor()
+
+query ="UPDATE customers SET address = %s WHERE id = %s"
+values = ("Maputo, Costa do Sol - Triunfo", 1)
+cursor.execute(query, values)
+connection.commit()
+```
+
+## Credits
+
+w3schools
+- <a href="https://www.w3schools.com/python/default.asp" target="_blank">Python Tutorial</a>
+- <a href="https://www.w3schools.com/python/python_mysql_getstarted.asp" target="_blank">Python MySQL</a>
