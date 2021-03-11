@@ -46,6 +46,12 @@ connection = mysql.connector.connect(
 
 cursor = connection.cursor()
 cursor.execute("CREATE DATABASE college")
+# Or
+cursor.execute("CREATE DATABASE IF NOT EXISTS college")
+
+# check if exists
+cursor.execute("SHOW DATABASES")
+print(*cursor, sep='\n')
 ```
 
 ## Creating a Table
@@ -65,6 +71,11 @@ connection = mysql.connector.connect(
 
 cursor = connection.cursor()
 cursor.execute("CREATE TABLE students (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))")
+
+# check if exists
+cursor.execute("SHOW TABLES")
+print(*cursor, sep='\n')
+
 ```
 ## Insert Into Table
 To fill a table in MySQL, use the "INSERT INTO" statement.
