@@ -1,0 +1,11 @@
+teacher_name,teacher_email,college_id,date_joined,speciality,salary,experience
+Alex,"alex@py.com",2,"01/03/2010","Government/Political Science","5000",9
+Afonso,"afonso@py.com",4,"01/03/2011","Economics Science","9080",5
+Ines,"ines@py.com",4,"01/06/2007","Biology","9000",2
+max,"justin@py.com",2,"01/06/2003","Computer Science","6700",1
+vim,"vim@py.com",5,"01/06/2012","Economics","8000",7
+ana,"ana@py.com",1,"01/06/2012","Computer Science","9000",4
+viegas,"viegas@py.com",3,"01/06/2014","Psychology","5000",9
+leo,"leo@py.com",3,"01/03/2013","Communications","8700",8
+simiao,"simiao@py.com",5,"01/03/2016","Government/Political Science","6700",4
+vania,"vania@py.com",1,"01/06/2012","Communications","7000",6

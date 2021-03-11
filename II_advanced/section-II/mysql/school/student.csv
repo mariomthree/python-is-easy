@@ -1,0 +1,11 @@
+student_name, student_email,college_id, date_joined, major_taken, college_Level
+Mario,mario@py.com,1,01/06/2021,Computer Science,Bachelor
+Ines,ines@py.com,2,01/06/2017,Biology,Bachelor
+Adam,adam@py.com,4,01/03/2019,Government/Political Science,Associate
+Justin,justin@py.com,3,01/06/2020,Computer Science,Associate 
+Mikel,mikel@py.com,2,01/06/2018,Psychology,Bachelor
+Paulo,paulo@py.com,5,01/03/2017,Government/Political Science,Doctoral 
+Sandro,sandro@py.com,6,01/06/2021,Communications,Bachelor
+Kim,kim@py.com,7,01/06/2020,Economics,Master
+Miller,miller@py.com,1,01/03/2019,Communications,Doctoral 
+Afonso,afonso@py.com,7,01/03/2021,Economics Science,Master 
