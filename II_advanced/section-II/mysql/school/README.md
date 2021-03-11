@@ -31,7 +31,7 @@ Using MySQL and python create 3 tables `College`, `Student` and `Professor` with
 - Major_taken
 - College_Level
 
-Creates `csv` para` College` documents,` `Aluno` Professor` and performs reads and inserts in the database.
+Create `csv file` for the `college`, `Student` and `Teacher` insert the records of the documents in the database.
 
 
 # Exercise Resolution
@@ -70,28 +70,27 @@ Description of the methods of the `Main.py` file
 <br>
 
 ## How to run the project for the first time
-First, it is necessary to have the files `hospital.csv` and` doctor.csv`, and finally follow the code below.
+First, it is necessary to have the files `college`, `Student` and `Teacher`, and finally follow the code below.
 
 ```py
-# create database and table
-createDatabase()
-createTable()
+def main():
+    createDatabase()
+    createTable()
 
-# read csv files
-colleges = readCSVFile(getCurrentDirname()+'\college.csv')
-students = readCSVFile(getCurrentDirname()+'\student.csv')
-teachers = readCSVFile(getCurrentDirname()+'\\teacher.csv')
+    colleges = readCSVFile(getCurrentDirname()+'\college.csv')
+    students = readCSVFile(getCurrentDirname()+'\student.csv')
+    teachers = readCSVFile(getCurrentDirname()+'\\teacher.csv')
 
-# insert in database
-insertCollege(colleges)
-insertStudent(students)
-insertTeacher(teachers)
+    insertCollege(colleges)
+    insertStudent(students)
+    insertTeacher(teachers)
 
-# read and show data
-print("======== Colleges =========")
-showRecords(getDataOfColleges())
-print("======== Teachers =========")
-showRecords(getDataOfTeachers())
-print("======== Students =========")
-showRecords(getDataOfStudents())
+    print("======== Colleges =========")
+    showRecords(getDataOfColleges())
+    print("======== Teachers =========")
+    showRecords(getDataOfTeachers())
+    print("======== Students =========")
+    showRecords(getDataOfStudents())
+
+main()
 ```
