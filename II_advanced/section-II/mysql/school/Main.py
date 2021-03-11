@@ -14,6 +14,7 @@ def createDatabase():
         password=DB_PASSWORD
     )
     cursor = connection.cursor()
+    cursor.execute(f"DROP DATABASE {DB_DATABASE}")
     cursor.execute(f"CREATE DATABASE IF NOT EXISTS {DB_DATABASE}")
 
 def getInstance():
@@ -47,7 +48,8 @@ def createTable():
             date_joined DATE,\
             speciality VARCHAR(255),\
             salary double,\
-            experience VARCHAR(255))"
+            experience VARCHAR(255),\
+            UNIQUE KEY unique_email (teacher_email))"
     )
 
     cursor.execute(
@@ -58,7 +60,8 @@ def createTable():
             college_id INT,\
             date_joined DATE,\
             major_taken VARCHAR(255),\
-            college_Level VARCHAR(255))"
+            college_Level VARCHAR(255),\
+            UNIQUE KEY unique_email (student_email))"
     )
 
 def insertCollege(colleges):
