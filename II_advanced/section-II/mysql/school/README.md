@@ -39,7 +39,9 @@ Create `csv file` for the `college`, `Student` and `Teacher` insert the records 
 ## Prerequisites
 - Python (https://www.python.org/downloads/)
 - Python interpreter
-
+    - PyCharm (https://www.jetbrains.com/pycharm/download/)
+    - Anaconda (https://www.anaconda.com/)
+    - Jupyter (https://jupyter.org/install)
 There are other alternatives you can use `VS Code`,` Sublime Text` but you must install the extension or the package to program in `Python`.
 - MySQL (https://www.mysql.com/downloads/)
 
@@ -52,14 +54,18 @@ Description of the methods of the `Main.py` file
 - Creates a new connection in the database
 ### createTable() 
 - Creates the hospital and doctor tables
-### insertHospitals() 
-- Insert records in the hospital table
-### insertDoctors() 
-- Insert records in the doctor table
-### getDataOfHospital() 
-- returns records from the hospital table
-### getDataOfDoctors() 
-- returns records from the doctor table
+### insertCollege() 
+- Insert records in the college table
+### insertStudent()
+- Insert records in the student table
+### insertTeacher()
+- Insert records in the teacher table
+### getDataOfColleges() 
+- returns records from the colleges table
+### getDataOfStudents() 
+- returns records from the students table
+### getDataOfTeachers() 
+- returns records from the teacher table
 ### showRecords() 
 - shows registers using the for cycle
 ### getCurrentDirname() 
