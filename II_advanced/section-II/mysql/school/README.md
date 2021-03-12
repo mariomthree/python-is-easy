@@ -42,6 +42,7 @@ Create `csv file` for the `college`, `Student` and `Teacher` insert the records 
     - PyCharm (https://www.jetbrains.com/pycharm/download/)
     - Anaconda (https://www.anaconda.com/)
     - Jupyter (https://jupyter.org/install)
+
 There are other alternatives you can use `VS Code`,` Sublime Text` but you must install the extension or the package to program in `Python`.
 - MySQL (https://www.mysql.com/downloads/)
 
