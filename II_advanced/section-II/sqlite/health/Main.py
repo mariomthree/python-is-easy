@@ -82,7 +82,7 @@ def readCSVFile(fileName):
     records = []
     with open(fileName, 'r') as read_obj:
         csv_reader = csv.reader(read_obj)
-        header = next(csv_reader)
+      #  header = next(csv_reader)
         if header != None:
             for row in csv_reader:
                 records.append(row)
