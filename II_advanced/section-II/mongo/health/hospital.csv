@@ -1,11 +1,10 @@
-hospital_name," bed-count"
-HCM,1200
-HCG,2120
-HCI,1000
-HCS,2000
-HCM,2502
-HCT,2323
-HCZ,3400
-HCN,3456
-HCN,6767
-HCC,1223
+hospital_name,bed_count,address
+Hospital Central Maputo,12000,"Costa do Sol, 321"
+Hospital Central Beira,1200,"Beira, 321"
+Hospital Central Nampula,6200,"Nacala Porto, 221"
+Hospital Central Zambezia,4000,"Mocuba, 121"
+Hospital Central Gaza,1200,"Tete, 200"
+Hospital Central Cabo Delgado,1000,"Montepuez, 211"
+Hospital Central Niassa,9000,"Lichinga, 610"
+Hospital Central Inhambane,4000,"Maxixe, 410"
+Hospital Central Sofala,9000,"Dondo, 110"
