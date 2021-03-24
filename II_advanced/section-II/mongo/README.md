@@ -325,4 +325,4 @@ print(*studentsDoc, sep='\n')
 
 w3schools
 - <a href="https://www.w3schools.com/python/default.asp" target="_blank">Python Tutorial</a>
-- <a href="https://www.w3schools.com/python/python_mongodb_getstarted.asp" target="_blank">Mongo MySQL</a>
+- <a href="https://www.w3schools.com/python/python_mongodb_getstarted.asp" target="_blank">Mongo Database</a>
