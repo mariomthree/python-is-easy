@@ -2,36 +2,38 @@
 
 ## Description of the exercise
 
-Using MySQL and python create 3 tables `College`, `Student` and `Professor` with the following structure.
+Using MySQL and python create 4 tables `Fisher`, `Boat`, `Owner` and `Station` with the following structure.
 
-`College`                  
-- College_id
-- College_Name
-- College_Address
-- College_city
-- College_country
-    
+`Boat`
+- boat_Id (Unique)
+- boat_Name
+- boat_size in tonnes
+- boat_length
+- station_id
+- boat_capacity in number of people 
+- fishing (Yes/No)
 
-`Professor` 
-- teacher_id
-- Teacher_Name
-- teacher_Email
-- College_id
-- Date_joined
-- Speciality
-- Salary
-- Experience
+`Fisher`
+- fisher_id (Unique)
+- fisher_names
+- boat_id 
+- phone_number
+- email_address
+- Age
 
-`Student` 
-- Student_id
-- Student_Name
-- Student_Email
-- College_id
-- Date_joined
-- Major_taken
-- College_Level
+`Owner`
+- owner_id (Unique)
+- owner_name
+- boat_id 
+- phone_number
+- owner_email
 
-Create `csv file` for the `college`, `Student` and `Teacher` insert the records of the documents in the database.
+`Station`
+- station_id (Unique)
+- station_name
+- Address
+
+Create `csv file` for the `fisher`, `boat`, `owner`  and `station` insert the records of the documents in the database.
 
 
 # Exercise Resolution
@@ -55,18 +57,22 @@ Description of the methods of the `Main.py` file
 - Creates a new connection in the database
 ### createTable() 
 - Creates the hospital and doctor tables
-### insertCollege() 
-- Insert records in the college table
-### insertStudent()
-- Insert records in the student table
-### insertTeacher()
-- Insert records in the teacher table
-### getDataOfColleges() 
-- returns records from the colleges table
-### getDataOfStudents() 
-- returns records from the students table
-### getDataOfTeachers() 
-- returns records from the teacher table
+### insertStation() 
+- Insert records in the station table
+### insertFisher()
+- Insert records in the fisher table
+### insertBoat()
+- Insert records in the boat table
+### insertOwner()
+- Insert records in the owner table
+### getDataOfStation() 
+- returns records from the station table
+### getDataOfFisher() 
+- returns records from the fisher table
+### getDataOfBoat() 
+- returns records from the boat table
+### getDataOfOwner() 
+- returns records from the owner table
 ### showRecords() 
 - shows registers using the for cycle
 ### getCurrentDirname() 
@@ -80,24 +86,28 @@ Description of the methods of the `Main.py` file
 First, it is necessary to have the files `college`, `Student` and `Teacher`, and finally follow the code below.
 
 ```py
+
 def main():
     createDatabase()
     createTable()
 
-    colleges = readCSVFile(getCurrentDirname()+'\college.csv')
-    students = readCSVFile(getCurrentDirname()+'\student.csv')
-    teachers = readCSVFile(getCurrentDirname()+'\\teacher.csv')
+    stations = readCSVFile(getCurrentDirname()+'\\station.csv')
+    boats = readCSVFile(getCurrentDirname()+'\\boat.csv')
+    owners = readCSVFile(getCurrentDirname()+'\\owner.csv')
+    fishers = readCSVFile(getCurrentDirname()+'\\fisher.csv')
 
-    insertCollege(colleges)
-    insertStudent(students)
-    insertTeacher(teachers)
+    insertStation(stations)
+    insertBoat(boats)
+    insertFisher(fishers)
+    insertOwner(owners)
 
-    print("======== Colleges =========")
-    showRecords(getDataOfColleges())
-    print("======== Teachers =========")
-    showRecords(getDataOfTeachers())
-    print("======== Students =========")
-    showRecords(getDataOfStudents())
-
+    print("======== Boat =========")
+    showRecords(getDataOfBoat())
+    print("======== Fisher =========")
+    showRecords(getDataOfFisher())
+    print("======== Owner =========")
+    showRecords(getDataOfOwner())
+    print("======== Station =========")
+    showRecords(getDataOfStation())
 main()
 ```
