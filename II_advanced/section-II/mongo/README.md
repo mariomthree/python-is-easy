@@ -20,7 +20,7 @@ $ python -m pip install pymongo
 ```py
 import pymongo
 
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 # check if exists
@@ -38,7 +38,7 @@ MongoDB will create the collection if it does not exist.
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -54,7 +54,7 @@ The first parameter of the insert_one() method is a dictionary containing the na
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -68,7 +68,7 @@ print(studentDoc.inserted_id)
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -88,7 +88,7 @@ print(studentDoc.inserted_ids)
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -114,7 +114,7 @@ The find_one() method returns the first occurrence in the selection.
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -130,7 +130,7 @@ The first parameter of the find() method is a query object. In this example we u
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -145,7 +145,7 @@ This parameter is optional, and if omitted, all fields will be included in the r
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -166,7 +166,7 @@ The first argument of the find() method is a query object, and is used to limit 
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -183,7 +183,7 @@ E.g. to find the documents where the "address" field starts with the letter "S" 
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -200,7 +200,7 @@ The sort() method takes one parameter for "fieldname" and one parameter for "dir
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -222,7 +222,7 @@ The first parameter of the delete_one() method is a query object defining which 
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 studentCollection = database["students"]
@@ -238,7 +238,7 @@ The first parameter of the delete_many() method is a query object defining which
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 # delete all documents were the address starts with the letter S
@@ -254,7 +254,7 @@ To delete all documents in a collection, pass an empty query object to the delet
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 # Delete all documents in the "students" collection:
@@ -271,7 +271,7 @@ You can delete a table, or collection as it is called in MongoDB, by using the d
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 Delete the "customers" collection:
@@ -287,7 +287,7 @@ The first parameter of the update_one() method is a query object defining which 
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 Delete the "customers" collection:
@@ -311,7 +311,7 @@ The limit() method takes one parameter, a number defining how many documents to 
 
 ```py
 import pymongo
-mongoClient = pymongo.MongoClient("mongodb://localhost:27017/")
+mongoClient = pymongo.MongoClient("<host>")
 database = mongoClient["school"]
 
 Delete the "customers" collection:
