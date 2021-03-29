@@ -46,7 +46,7 @@ Description of the methods of the `Main.py` file
 - Convert list to string
 ### createHtmlContents()
 - create all html contents
-## createHtmlFile()
+### createHtmlFile()
 - create the html file
 
 
