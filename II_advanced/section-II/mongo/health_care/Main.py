@@ -61,6 +61,17 @@ def getDataOfPatients():
         }
     ])
 
+def showPatients(patients):
+    for patient in patients:
+        print(
+            patient['patient_names'],"  ",
+            patient['date_birth'],"  ",
+            patient['inpatient'],"  ",
+            patient['gender'],"  ",
+            patient['doctor'][0]['doctor_name'],"  ",
+            patient['hospital'][0]['hospital_name']
+        )
+
 def showRecords(records):
     print(*records, sep='\n')
 
@@ -80,18 +91,18 @@ hospitals = readCSVFile(getCurrentDirname()+'/hospital.csv')
 doctors = readCSVFile(getCurrentDirname()+'/doctor.csv')
 patients = readCSVFile(getCurrentDirname()+'/patient.csv')
 
-insertHospitals(hospitals)
-insertDoctors(doctors)
-insertPatients(patients)
+# insertHospitals(hospitals)
+# insertDoctors(doctors)
+# insertPatients(patients)
 
-print("======= Hospital  ========")
-hospitals = getDataOfHospital()
-showRecords(hospitals)
+# print("======= Hospital  ========")
+# hospitals = getDataOfHospital()
+# showRecords(hospitals)
 
-print("\n======= DOCTORS  ========")
-doctors = getDataOfDoctors()
-showRecords(doctors)
+# print("\n======= DOCTORS  ========")
+# doctors = getDataOfDoctors()
+# showRecords(doctors)
 
 print("\n======= PATIENTS  ========")
 patients = getDataOfPatients()
-showRecords(patients)
+showPatients(patients)
