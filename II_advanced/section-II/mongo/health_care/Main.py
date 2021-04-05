@@ -27,10 +27,39 @@ def getDataOfHospital():
     return hospitalCollection.find()
 
 def getDataOfDoctors(): 
-    return doctorCollection.find()
+    return doctorCollection.aggregate([
+        {
+            "$lookup":
+            {
+                "from": "hospitals",
+                "localField": "hospital_id",
+                "foreignField": "_id",
+                "as": "hospital"
+            }
+        }
+    ])
 
 def getDataOfPatients(): 
-    return patientCollection.find()
+    return patientCollection.aggregate([
+        {
+            "$lookup":
+            {
+                "from": "hospitals",
+                "localField": "hospital_id",
+                "foreignField": "_id",
+                "as": "hospital"
+            }
+        },
+        {
+            "$lookup":
+            {
+                "from": "doctors",
+                "localField": "doctor_id",
+                "foreignField": "_id",
+                "as": "doctor"
+            }
+        }
+    ])
 
 def showRecords(records):
     print(*records, sep='\n')
@@ -51,9 +80,9 @@ hospitals = readCSVFile(getCurrentDirname()+'/hospital.csv')
 doctors = readCSVFile(getCurrentDirname()+'/doctor.csv')
 patients = readCSVFile(getCurrentDirname()+'/patient.csv')
 
-# insertHospitals(hospitals)
-# insertDoctors(doctors)
-# insertPatients(patients)
+insertHospitals(hospitals)
+insertDoctors(doctors)
+insertPatients(patients)
 
 print("======= Hospital  ========")
 hospitals = getDataOfHospital()
