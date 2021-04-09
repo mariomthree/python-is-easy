@@ -19,8 +19,7 @@ Resolution Imagens
 3.  Create a line plot for the variables. Add a title and x & y axes.
     - Beautify the x-labels
     - plot a line graph
-
-    <img src="img/img_3.png">
+<img src="img/img_3.png">
 
 4.  Create a scatter plot / Add title and (X,Y) axis names
 <img src="img/img_4.png">
