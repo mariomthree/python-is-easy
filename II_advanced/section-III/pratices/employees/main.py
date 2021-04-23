@@ -98,8 +98,7 @@ def insertEmployees(employees):
     connection = getInstance()
     cursor = connection.cursor()
     for employee in employees.values.tolist():
-        query = "INSERT INTO employees VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,\
-            %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);"
+        query = "INSERT INTO employees VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);"
         cursor.execute(query, tuple(employee))
     connection.commit()
     connection.close()
