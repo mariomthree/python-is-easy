@@ -152,10 +152,8 @@ def readCSVFile(fileName):
     records = []
     with open(fileName, 'r') as read_obj:
         csv_reader = csv.reader(read_obj)
-        header = next(csv_reader)
-        if header != None:
-            for row in csv_reader:
-                records.append(row)
+        for row in csv_reader:
+            records.append(row)
     return records
 
 def showRecords(records):
@@ -174,12 +172,12 @@ def main():
     insertStudent(students)
     insertTeacher(teachers)
 
-    print("======== Colleges =========")
-    showRecords(getDataOfColleges())
-    print("======== Teachers =========")
-    showRecords(getDataOfTeachers())
-    print("======== Students =========")
-    showRecords(getDataOfStudents())
+    # print("======== Colleges =========")
+    # showRecords(getDataOfColleges())
+    # print("======== Teachers =========")
+    # showRecords(getDataOfTeachers())
+    # print("======== Students =========")
+    # showRecords(getDataOfStudents())
 
 main()
 
