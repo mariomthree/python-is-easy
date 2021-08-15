@@ -1,5 +1,5 @@
 # Python is easy
- Introductory python course, offered by `Open Source IT`.
+ Learning python with `Open Source IT` and `Programming Python 4th Edition - Mark Lutz`.
 
 ## Pre requirements
 
